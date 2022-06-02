@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Navigation*/
+nav header img{
+
+    padding: 6px 8px 6px 8px;
+    width: 50%;
+    margin-left: 20%;
+
+}
+
+nav{
+
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 146, 0);
+
+}
+
+nav ul{
+
+    position: relative;
+    list-style-type: none;
+
+}
+
+nav ul ul{
+
+    position: absolute;
+    left: 100%;
+    width: 150%;
+    top: 0;
+    display: none;
+    background-color: green;
+    opacity: 0.9;
+    
+    
+}
+
+/*Dropright of About*/
+nav ul li a{
+
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    padding: 10px 40px;
+    height: 80px;
+}
+
+nav ul ul li a{
+
+    height: 50px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+nav a.active{
+
+    background-color: yellow;
+    opacity: 1;
+ 
+}
+
+nav ul ul li a:hover{
+
+    background-color: darkgreen;
+}
+
+nav ul li a:hover{
+
+    background-color: darkgreen;
+}
+
+nav ul .dropright{
+
+    position: relative;
+}
+
+nav ul .dropright:hover ul{
+
+    display: initial;
+}
+
+/*For background*/
+section{
+
+    width: 100%;
+    height: 100vh;
+    background: url(img/pnc1.jpg);
+    background-size: cover; 
+}
+
+.dots{
+
+    position: absolute;
+    bottom: 8px;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.dot {
+
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+}
+
+html{
+    
+    scroll-behavior: smooth;
+}

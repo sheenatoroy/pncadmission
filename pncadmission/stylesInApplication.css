@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&display=swap');
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background:
+    linear-gradient(rgba(11, 202, 43, 0.473),
+    rgba(11, 202, 43, 0.473)),
+    url(img/pnc2.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Merriweather', serif;
+}
+
+.logo img{
+
+    float: left;
+    width: 20%;
+    margin: 5px 5px 10px 5px;
+    margin-left: 10px;
+}
+
+nav {
+
+    background-color: darkgreen;
+    position: fixed;
+    top: 0;
+    height: 100px;
+    line-height: 60px;
+    width: 100%;
+    
+}
+
+nav ul{
+
+    float: right;
+    list-style: none;
+    margin: 10px 10px 20px 25px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+}
+
+nav li{
+
+    display: inline-block;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+nav li a{
+
+    color: white;
+    display: block;
+    font-size: 1em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 10px 30px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    float: left;
+}
+
+nav li a:hover{
+
+    color: gold;
+}
+
+li {
+
+    display: block;
+    transition-duration: 0.5s;
+
+}
+
+li:hover {
+
+    cursor: pointer;
+}
+
+ul li ul {
+
+    background-color: darkgreen;
+    visibility: hidden;
+    opacity: 0;
+    width: 25rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 4.5rem;
+    left: 0;
+    display: none;
+    
+  
+}
+
+
+ul li:hover > ul,
+ul li ul:hover {
+
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    
+}
+
+ul li ul li  {
+
+    clear: both;
+    width: 100%;
+    
+}
+
+
+ul li ul li:hover  {
+
+  background-color: rgba(0, 128, 0, 0.521);
+    
+}
+
+nav h1{
+
+    color: gold;
+    font-size: 10%;
+}
+

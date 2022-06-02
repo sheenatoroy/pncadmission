@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesInRegistration.css">
+    <title>Admission | Pamantasan ng Cabuyao</title>
+
+
+<script>
+    function validate(){
+
+        var valid = false;
+
+        if (document.getElementById("agree").checked) {
+
+            valid = true;
+        }
+
+        else if (document.getElementById("hereby").checked) {
+
+            valid = true;
+        }
+
+        if(valid){
+
+            alert("Validation Successful");
+           
+
+        }else{
+            alert("Confirmation required");
+            return false;
+
+        }
+    }
+</script>
+</head>
+<body>
+     <!--Navigation for History-->
+     <nav>
+        <div class="nav-wrapper">
+            <div class="logo">
+                <img src="img/logo1.png" alt="">
+            </div>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">About</a>
+                    <!--Sub menu in About-->
+                    <ul class="dropdown">
+                        <li><a  href="history.html">History</a></li>
+                        <li><a  href="chedrecognition.html">CHED Recognition</a></li>
+                        <li><a  href="mvc.html">Mission, Vission & Core Values</a></li>
+                        <li><a  href="pnchymn.html">PNC Hymn</a></li>
+                    </ul>
+                  </li>
+                <li><a href="programs.html">Programs</a></li>
+                 <li class="dropright"><a href="#">ADMISSION</a>
+             <!--Sub menu in About-->
+                    <ul class="dropdown">
+                        <li><a  href="registration.html">New Students</a></li>
+                        <li><a  href="pncapp.html">Old Students</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                <a href="contact.html">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="first-content">
+        <div class= "headings">
+       <p> Who may take the PnC-College Admission Test (PNC-CAT)? </p>
+        </div>
+
+       <div class="classifications">
+       <p> Those who are currently enrolled in Grade 12 (public or private)</p>
+       <p>Those who are graduates of SHS but have NOT YET enrolled in any college or university</p>
+       <p>Those who are registered voters of Cabuyao City or whose parents are registered voters of Cabuyao City (please note that Cabuyenos will be given priority)
+        </div>
+
+    <div class="note">
+        <p>NOTE: </p>
+    </div>
+
+        <div class="classifications">
+       <p> For NON-CABUYENOS or those coming from the other cities or provices: only those who belong to the Top 10 of their class will be allowed to take the admission test (a certification from the school registrar will be required) </p>
+       <p>Transferees are not allowed to take this exam</p>
+         </div>
+
+<div class="privacy-statements">
+    <form action= "applicationform.php" name="myform" onsubmit="return validate()"> 
+        <input type="checkbox" id="agree" value="Agree"> I agree with the university's Data Privacy Statements and express my consentt for the Pamantasan ng Cabuyao (PnC), to collect, record, organized, update or modify, retrieve, consult, use, consolidate, block, erase or <p>destruct my personal data as part of my information.</p><br>
+         <input action= "applicationform.php" type="checkbox" id="hereby" value="Hereby"> I hereby affirm my right to be informed, object to processing, acess and rectify, suspend or withdraw my personal data, and be indemnified in case of damage pursuant to the provisions of the Republic Act No. 10173 of the <p>Philippines, Data Privacy Act of 2012 and its corresponding Implementing Rules and Regulations. </p><br>
+
+         <input class="submit" type="submit" value="APPLY NOW"> 
+    </form>
+</div>
+</div>
+
+    <!-- <div class="bg-image">
+        <img src="img/pnc2.jpg" style="width: 100%; height: 70vh;">
+    </div> -->
+</body>
+</html>
